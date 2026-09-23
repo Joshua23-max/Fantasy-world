@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reborn Kingdom — AI Fantasy Voice Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Reborn Kingdom</h1>
+      <p class="subtitle">You have been reborn into Eldoria...</p>
+    </header>
+
+    <!-- Character Selector -->
+    <div class="character-select">
+      <button class="char-btn active" data-char="elara">Princess Elara</button>
+      <button class="char-btn" data-char="knight">Sir Kael</button>
+      <button class="char-btn" data-char="mage">Liora</button>
+      <button class="char-btn" data-char="goblin">Grim</button>
+    </div>
+
+    <!-- Chat Area -->
+    <div id="chat" class="chat-box"></div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <button id="micBtn" class="mic-btn" title="Hold to talk / Click to toggle">
+        🎤
+      </button>
+      <input type="text" id="messageInput" placeholder="Type or speak your action..." autocomplete="off" />
+      <button id="sendBtn">Send</button>
+    </div>
+
+    <!-- Voice Controls -->
+    <div class="voice-controls">
+      <label>
+        <input type="checkbox" id="autoSpeak" checked />
+        AI speaks replies
+      </label>
+      <button id="stopSpeakBtn">Stop Speaking</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
